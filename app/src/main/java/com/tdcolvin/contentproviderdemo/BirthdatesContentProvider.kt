@@ -85,8 +85,6 @@ class BirthdatesContentProvider: ContentProvider() {
 
         val cursor = qb.query(db, projection, selection, selectionArgs, null, null, sortOrder, null, cancellationSignal)
 
-        db.close()
-
         return cursor
     }
 
